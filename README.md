@@ -26,25 +26,21 @@ javac AnaSayfa.java
 java ödev2.AnaSayfa
 
 
----
+File Format
+kurs.txt
+Stores course data in the format:
+courseId + courseName
 
-## File Format
-
-### `kurs.txt`
-Stores course data in the format:  
-`courseId + courseName`
-
-### `kursiyer.txt`
+kursiyer.txt
 Stores trainee data in a custom format:
-- Lines starting with `*` represent a trainee:  
-  `*id + name + age`
-- Lines starting with `%` represent courses taken by the last trainee:  
-  `%id + name`
 
----
+Lines starting with * represent a trainee:
+*id + name + age
 
-## Notes
+Lines starting with % represent courses taken by the last trainee:
+%id + name
 
-- All data is **read from** and **written to** files automatically when the program starts and exits.  
-- The program includes **input validation** and **duplicate ID checks**.
+Notes
+All data is read from and written to files automatically when the program starts and exits.
 
+The program includes input validation and duplicate ID checks.
