@@ -24,23 +24,24 @@ This is a Java-based Course Management System project developed for an Object-Or
 ```bash
 javac AnaSayfa.java
 java ödev2.AnaSayfa
+```
 
+## File Format
 
-File Format
-kurs.txt
-Stores course data in the format:
-courseId + courseName
+### kurs.txt  
+Stores course data in the format:  
+`courseId + courseName`
 
-kursiyer.txt
+### kursiyer.txt  
 Stores trainee data in a custom format:
 
-Lines starting with * represent a trainee:
-*id + name + age
+- Lines starting with `*` represent a trainee:  
+  `*id + name + age`
 
-Lines starting with % represent courses taken by the last trainee:
-%id + name
+- Lines starting with `%` represent courses taken by the last trainee:  
+  `%id + name`
 
-Notes
-All data is read from and written to files automatically when the program starts and exits.
+## Notes
 
-The program includes input validation and duplicate ID checks.
+- All data is **read from** and **written to** files automatically when the program starts and exits.  
+- The program includes **input validation** and **duplicate ID checks**.
